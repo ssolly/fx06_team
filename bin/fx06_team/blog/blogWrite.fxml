@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="350.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="fx06_team.blog.BlogController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goMain" style="-fx-background-color: transparent;" text="NAVER" textFill="#229a56">
+         <font>
+            <Font name="Yu Gothic Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="76.0" layoutY="51.0" text="B L O G" textFill="#0d6f36">
+         <font>
+            <Font name="Yu Gothic Bold" size="53.0" />
+         </font>
+      </Label>
+      <Label layoutX="31.0" layoutY="150.0" text="제목" />
+      <TextField fx:id="title" layoutX="76.0" layoutY="145.0" prefHeight="29.0" prefWidth="230.0" />
+      <Label layoutX="31.0" layoutY="186.0" text="내용" />
+      <TextArea fx:id="blogContent" layoutX="75.0" layoutY="186.0" prefHeight="244.0" prefWidth="230.0" />
+      <Button layoutX="121.0" layoutY="448.0" mnemonicParsing="false" onAction="#regist" text="등록">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="199.0" layoutY="448.0" mnemonicParsing="false" onAction="#cancel" text="취소">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
